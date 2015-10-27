@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A1A65E31AA8A60E00944145 /* InputMask.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A65E21AA8A60E00944145 /* InputMask.h */; };
+		8A1A66861AA8A74900944145 /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A665F1AA8A74900944145 /* Mask.m */; };
+		8A1A66871AA8A74900944145 /* EOLComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66621AA8A74900944145 /* EOLComponent.m */; };
+		8A1A66881AA8A74900944145 /* FreeCharacterComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66641AA8A74900944145 /* FreeCharacterComponent.m */; };
+		8A1A66891AA8A74900944145 /* MaskComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66661AA8A74900944145 /* MaskComponent.m */; };
+		8A1A668A1AA8A74900944145 /* MultiCharacterValueableComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66681AA8A74900944145 /* MultiCharacterValueableComponent.m */; };
+		8A1A668B1AA8A74900944145 /* ValueableCharacterComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A666A1AA8A74900944145 /* ValueableCharacterComponent.m */; };
+		8A1A668C1AA8A74900944145 /* MaskedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A666C1AA8A74900944145 /* MaskedTextField.m */; };
+		8A1A668D1AA8A74900944145 /* FormatParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A666F1AA8A74900944145 /* FormatParser.m */; };
+		8A1A668E1AA8A74900944145 /* MaskCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66711AA8A74900944145 /* MaskCleaner.m */; };
+		8A1A668F1AA8A74900944145 /* MaskFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66731AA8A74900944145 /* MaskFormatter.m */; };
+		8A1A66901AA8A74900944145 /* MaskUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66751AA8A74900944145 /* MaskUtil.m */; };
+		8A1A66911AA8A74900944145 /* MaskValueExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66771AA8A74900944145 /* MaskValueExtractor.m */; };
+		8A1A66921AA8A74900944145 /* PlaceholderCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66791AA8A74900944145 /* PlaceholderCreator.m */; };
+		8A1A66931AA8A74900944145 /* Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A667C1AA8A74900944145 /* Transition.m */; };
+		8A1A66941AA8A74900944145 /* TransitionGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A667E1AA8A74900944145 /* TransitionGraph.m */; };
+		8A1A66951AA8A74900944145 /* NSArrayCycleIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66811AA8A74900944145 /* NSArrayCycleIterator.m */; };
+		8A1A66961AA8A74900944145 /* NSString+Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66831AA8A74900944145 /* NSString+Character.m */; };
+		8A1A66971AA8A74900944145 /* NSStringIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66851AA8A74900944145 /* NSStringIterator.m */; };
+		8A1A66981AA8A7EE00944145 /* EOLComponent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66611AA8A74900944145 /* EOLComponent.h */; };
+		8A1A66991AA8A7EE00944145 /* FreeCharacterComponent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66631AA8A74900944145 /* FreeCharacterComponent.h */; };
+		8A1A669A1AA8A7EE00944145 /* MaskComponent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66651AA8A74900944145 /* MaskComponent.h */; };
+		8A1A669B1AA8A7EE00944145 /* MultiCharacterValueableComponent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66671AA8A74900944145 /* MultiCharacterValueableComponent.h */; };
+		8A1A669C1AA8A7EE00944145 /* ValueableCharacterComponent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66691AA8A74900944145 /* ValueableCharacterComponent.h */; };
+		8A1A669D1AA8A7EE00944145 /* FormatParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A666E1AA8A74900944145 /* FormatParser.h */; };
+		8A1A669E1AA8A7EE00944145 /* MaskCleaner.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66701AA8A74900944145 /* MaskCleaner.h */; };
+		8A1A669F1AA8A7EE00944145 /* MaskFormatter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66721AA8A74900944145 /* MaskFormatter.h */; };
+		8A1A66A01AA8A7EE00944145 /* MaskUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66741AA8A74900944145 /* MaskUtil.h */; };
+		8A1A66A11AA8A7EE00944145 /* MaskValueExtractor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66761AA8A74900944145 /* MaskValueExtractor.h */; };
+		8A1A66A21AA8A7EE00944145 /* PlaceholderCreator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66781AA8A74900944145 /* PlaceholderCreator.h */; };
+		8A1A66A31AA8A7EE00944145 /* Transition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A667B1AA8A74900944145 /* Transition.h */; };
+		8A1A66A41AA8A7EE00944145 /* TransitionGraph.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A667D1AA8A74900944145 /* TransitionGraph.h */; };
+		8A1A66A51AA8A7EE00944145 /* NSArrayCycleIterator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66801AA8A74900944145 /* NSArrayCycleIterator.h */; };
+		8A1A66A61AA8A7EE00944145 /* NSString+Character.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66821AA8A74900944145 /* NSString+Character.h */; };
+		8A1A66A71AA8A7EE00944145 /* NSStringIterator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A66841AA8A74900944145 /* NSStringIterator.h */; };
+		8A1A66A81AA8A7EE00944145 /* Mask.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A665E1AA8A74900944145 /* Mask.h */; };
+		8A1A66A91AA8A7EE00944145 /* MaskedTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A1A666B1AA8A74900944145 /* MaskedTextField.h */; };
+		8A46DD191AAF17E300B6F909 /* ExtraChargeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A46DD181AAF17E300B6F909 /* ExtraChargeTests.m */; };
+		8A47D7AC1AAB41DC005A63A9 /* FormatSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D7AB1AAB41DC005A63A9 /* FormatSanitizer.m */; };
+		8A47D7B01AAB4600005A63A9 /* InputBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D7AF1AAB4600005A63A9 /* InputBlock.m */; };
+		8A5A39A01AAB9468004EBAF4 /* libInputMask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1A65DF1AA8A60E00944145 /* libInputMask.a */; };
+		8A5A39A71AAB9579004EBAF4 /* EOLComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66621AA8A74900944145 /* EOLComponent.m */; };
+		8A5A39A81AAB9579004EBAF4 /* FreeCharacterComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66641AA8A74900944145 /* FreeCharacterComponent.m */; };
+		8A5A39A91AAB9579004EBAF4 /* MaskComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66661AA8A74900944145 /* MaskComponent.m */; };
+		8A5A39AA1AAB9579004EBAF4 /* MultiCharacterValueableComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66681AA8A74900944145 /* MultiCharacterValueableComponent.m */; };
+		8A5A39AB1AAB9579004EBAF4 /* ValueableCharacterComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A666A1AA8A74900944145 /* ValueableCharacterComponent.m */; };
+		8A5A39AC1AAB957E004EBAF4 /* FormatParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A666F1AA8A74900944145 /* FormatParser.m */; };
+		8A5A39AD1AAB957E004EBAF4 /* FormatSanitizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D7AB1AAB41DC005A63A9 /* FormatSanitizer.m */; };
+		8A5A39AE1AAB957E004EBAF4 /* MaskCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66711AA8A74900944145 /* MaskCleaner.m */; };
+		8A5A39AF1AAB957E004EBAF4 /* MaskFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66731AA8A74900944145 /* MaskFormatter.m */; };
+		8A5A39B01AAB957E004EBAF4 /* MaskUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66751AA8A74900944145 /* MaskUtil.m */; };
+		8A5A39B11AAB957E004EBAF4 /* MaskValueExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66771AA8A74900944145 /* MaskValueExtractor.m */; };
+		8A5A39B21AAB957E004EBAF4 /* PlaceholderCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66791AA8A74900944145 /* PlaceholderCreator.m */; };
+		8A5A39B31AAB9581004EBAF4 /* InputBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47D7AF1AAB4600005A63A9 /* InputBlock.m */; };
+		8A5A39B41AAB9589004EBAF4 /* Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A667C1AA8A74900944145 /* Transition.m */; };
+		8A5A39B51AAB9589004EBAF4 /* TransitionGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A667E1AA8A74900944145 /* TransitionGraph.m */; };
+		8A5A39B61AAB9589004EBAF4 /* NSArrayCycleIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66811AA8A74900944145 /* NSArrayCycleIterator.m */; };
+		8A5A39B71AAB9589004EBAF4 /* NSString+Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66831AA8A74900944145 /* NSString+Character.m */; };
+		8A5A39B81AAB9589004EBAF4 /* NSStringIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A66851AA8A74900944145 /* NSStringIterator.m */; };
+		8A5A39B91AAB9589004EBAF4 /* Mask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A665F1AA8A74900944145 /* Mask.m */; };
+		8A5A39BA1AAB9589004EBAF4 /* MaskedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A666C1AA8A74900944145 /* MaskedTextField.m */; };
+		8A5A39BD1AAB9A9D004EBAF4 /* PhoneNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A39BC1AAB9A9D004EBAF4 /* PhoneNumberTests.m */; };
+		8A5A39C01AAB9B61004EBAF4 /* MaskTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5A39BF1AAB9B61004EBAF4 /* MaskTestCase.m */; };
+		8A9A7D2E1AC145DC00F63B1A /* SimplePlaceholderCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9A7D2D1AC145DC00F63B1A /* SimplePlaceholderCreator.m */; };
+		8AD8A6BE1AAF4CED00A55771 /* DayMonthYearDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD8A6BD1AAF4CED00A55771 /* DayMonthYearDateTests.m */; };
+		8AF030BA1AABAA6D00A4D707 /* VariablePhoneNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF030B91AABAA6D00A4D707 /* VariablePhoneNumberTests.m */; };
+		8AF030BC1AABB17A00A4D707 /* MonthYearDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF030BB1AABB17A00A4D707 /* MonthYearDateTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A5A39A11AAB9468004EBAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A1A65D71AA8A60E00944145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1A65DE1AA8A60E00944145;
+			remoteInfo = InputMask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A1A65DD1AA8A60E00944145 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8A1A66981AA8A7EE00944145 /* EOLComponent.h in CopyFiles */,
+				8A1A66991AA8A7EE00944145 /* FreeCharacterComponent.h in CopyFiles */,
+				8A1A669A1AA8A7EE00944145 /* MaskComponent.h in CopyFiles */,
+				8A1A669B1AA8A7EE00944145 /* MultiCharacterValueableComponent.h in CopyFiles */,
+				8A1A669C1AA8A7EE00944145 /* ValueableCharacterComponent.h in CopyFiles */,
+				8A1A669D1AA8A7EE00944145 /* FormatParser.h in CopyFiles */,
+				8A1A669E1AA8A7EE00944145 /* MaskCleaner.h in CopyFiles */,
+				8A1A669F1AA8A7EE00944145 /* MaskFormatter.h in CopyFiles */,
+				8A1A66A01AA8A7EE00944145 /* MaskUtil.h in CopyFiles */,
+				8A1A66A11AA8A7EE00944145 /* MaskValueExtractor.h in CopyFiles */,
+				8A1A66A21AA8A7EE00944145 /* PlaceholderCreator.h in CopyFiles */,
+				8A1A66A31AA8A7EE00944145 /* Transition.h in CopyFiles */,
+				8A1A66A41AA8A7EE00944145 /* TransitionGraph.h in CopyFiles */,
+				8A1A66A51AA8A7EE00944145 /* NSArrayCycleIterator.h in CopyFiles */,
+				8A1A66A61AA8A7EE00944145 /* NSString+Character.h in CopyFiles */,
+				8A1A66A71AA8A7EE00944145 /* NSStringIterator.h in CopyFiles */,
+				8A1A66A81AA8A7EE00944145 /* Mask.h in CopyFiles */,
+				8A1A66A91AA8A7EE00944145 /* MaskedTextField.h in CopyFiles */,
+				8A1A65E31AA8A60E00944145 /* InputMask.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A1A65DF1AA8A60E00944145 /* libInputMask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInputMask.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1A65E21AA8A60E00944145 /* InputMask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputMask.h; sourceTree = "<group>"; };
+		8A1A665E1AA8A74900944145 /* Mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mask.h; sourceTree = "<group>"; };
+		8A1A665F1AA8A74900944145 /* Mask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mask.m; sourceTree = "<group>"; };
+		8A1A66611AA8A74900944145 /* EOLComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOLComponent.h; sourceTree = "<group>"; };
+		8A1A66621AA8A74900944145 /* EOLComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOLComponent.m; sourceTree = "<group>"; };
+		8A1A66631AA8A74900944145 /* FreeCharacterComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeCharacterComponent.h; sourceTree = "<group>"; };
+		8A1A66641AA8A74900944145 /* FreeCharacterComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeCharacterComponent.m; sourceTree = "<group>"; };
+		8A1A66651AA8A74900944145 /* MaskComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskComponent.h; sourceTree = "<group>"; };
+		8A1A66661AA8A74900944145 /* MaskComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskComponent.m; sourceTree = "<group>"; };
+		8A1A66671AA8A74900944145 /* MultiCharacterValueableComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiCharacterValueableComponent.h; sourceTree = "<group>"; };
+		8A1A66681AA8A74900944145 /* MultiCharacterValueableComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiCharacterValueableComponent.m; sourceTree = "<group>"; };
+		8A1A66691AA8A74900944145 /* ValueableCharacterComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueableCharacterComponent.h; sourceTree = "<group>"; };
+		8A1A666A1AA8A74900944145 /* ValueableCharacterComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueableCharacterComponent.m; sourceTree = "<group>"; };
+		8A1A666B1AA8A74900944145 /* MaskedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskedTextField.h; sourceTree = "<group>"; };
+		8A1A666C1AA8A74900944145 /* MaskedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskedTextField.m; sourceTree = "<group>"; };
+		8A1A666E1AA8A74900944145 /* FormatParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatParser.h; sourceTree = "<group>"; };
+		8A1A666F1AA8A74900944145 /* FormatParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatParser.m; sourceTree = "<group>"; };
+		8A1A66701AA8A74900944145 /* MaskCleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskCleaner.h; sourceTree = "<group>"; };
+		8A1A66711AA8A74900944145 /* MaskCleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskCleaner.m; sourceTree = "<group>"; };
+		8A1A66721AA8A74900944145 /* MaskFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskFormatter.h; sourceTree = "<group>"; };
+		8A1A66731AA8A74900944145 /* MaskFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskFormatter.m; sourceTree = "<group>"; };
+		8A1A66741AA8A74900944145 /* MaskUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskUtil.h; sourceTree = "<group>"; };
+		8A1A66751AA8A74900944145 /* MaskUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskUtil.m; sourceTree = "<group>"; };
+		8A1A66761AA8A74900944145 /* MaskValueExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskValueExtractor.h; sourceTree = "<group>"; };
+		8A1A66771AA8A74900944145 /* MaskValueExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskValueExtractor.m; sourceTree = "<group>"; };
+		8A1A66781AA8A74900944145 /* PlaceholderCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderCreator.h; sourceTree = "<group>"; };
+		8A1A66791AA8A74900944145 /* PlaceholderCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderCreator.m; sourceTree = "<group>"; };
+		8A1A667B1AA8A74900944145 /* Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transition.h; sourceTree = "<group>"; };
+		8A1A667C1AA8A74900944145 /* Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transition.m; sourceTree = "<group>"; };
+		8A1A667D1AA8A74900944145 /* TransitionGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionGraph.h; sourceTree = "<group>"; };
+		8A1A667E1AA8A74900944145 /* TransitionGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionGraph.m; sourceTree = "<group>"; };
+		8A1A66801AA8A74900944145 /* NSArrayCycleIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayCycleIterator.h; sourceTree = "<group>"; };
+		8A1A66811AA8A74900944145 /* NSArrayCycleIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayCycleIterator.m; sourceTree = "<group>"; };
+		8A1A66821AA8A74900944145 /* NSString+Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Character.h"; sourceTree = "<group>"; };
+		8A1A66831AA8A74900944145 /* NSString+Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Character.m"; sourceTree = "<group>"; };
+		8A1A66841AA8A74900944145 /* NSStringIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringIterator.h; sourceTree = "<group>"; };
+		8A1A66851AA8A74900944145 /* NSStringIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringIterator.m; sourceTree = "<group>"; };
+		8A46DD181AAF17E300B6F909 /* ExtraChargeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraChargeTests.m; sourceTree = "<group>"; };
+		8A47D7AA1AAB41DC005A63A9 /* FormatSanitizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatSanitizer.h; sourceTree = "<group>"; };
+		8A47D7AB1AAB41DC005A63A9 /* FormatSanitizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatSanitizer.m; sourceTree = "<group>"; };
+		8A47D7AE1AAB4600005A63A9 /* InputBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputBlock.h; sourceTree = "<group>"; };
+		8A47D7AF1AAB4600005A63A9 /* InputBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputBlock.m; sourceTree = "<group>"; };
+		8A47D7B11AAB4817005A63A9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8A5A39931AAB9428004EBAF4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5A399A1AAB9468004EBAF4 /* InputMaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputMaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5A39BC1AAB9A9D004EBAF4 /* PhoneNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberTests.m; sourceTree = "<group>"; };
+		8A5A39BE1AAB9B61004EBAF4 /* MaskTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskTestCase.h; sourceTree = "<group>"; };
+		8A5A39BF1AAB9B61004EBAF4 /* MaskTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskTestCase.m; sourceTree = "<group>"; };
+		8A9A7D2C1AC145DC00F63B1A /* SimplePlaceholderCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePlaceholderCreator.h; sourceTree = "<group>"; };
+		8A9A7D2D1AC145DC00F63B1A /* SimplePlaceholderCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePlaceholderCreator.m; sourceTree = "<group>"; };
+		8AD8A6BD1AAF4CED00A55771 /* DayMonthYearDateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayMonthYearDateTests.m; sourceTree = "<group>"; };
+		8AF030B91AABAA6D00A4D707 /* VariablePhoneNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariablePhoneNumberTests.m; sourceTree = "<group>"; };
+		8AF030BB1AABB17A00A4D707 /* MonthYearDateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthYearDateTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A1A65DC1AA8A60E00944145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5A39971AAB9468004EBAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5A39A01AAB9468004EBAF4 /* libInputMask.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A1A65D61AA8A60E00944145 = {
+			isa = PBXGroup;
+			children = (
+				8A1A65E11AA8A60E00944145 /* InputMask */,
+				8A5A39851AAB940C004EBAF4 /* InputMaskTests */,
+				8A1A65E01AA8A60E00944145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A1A65E01AA8A60E00944145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A65DF1AA8A60E00944145 /* libInputMask.a */,
+				8A5A399A1AAB9468004EBAF4 /* InputMaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A1A65E11AA8A60E00944145 /* InputMask */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A665D1AA8A74900944145 /* Classes */,
+				8A1A65E21AA8A60E00944145 /* InputMask.h */,
+			);
+			path = InputMask;
+			sourceTree = "<group>";
+		};
+		8A1A665D1AA8A74900944145 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A66601AA8A74900944145 /* MaskComponent */,
+				8A1A666D1AA8A74900944145 /* MaskUtil */,
+				8A47D7AD1AAB45E4005A63A9 /* Model */,
+				8A1A667A1AA8A74900944145 /* Transition */,
+				8A1A667F1AA8A74900944145 /* Utility */,
+				8A47D7B11AAB4817005A63A9 /* Constants.h */,
+				8A1A665E1AA8A74900944145 /* Mask.h */,
+				8A1A665F1AA8A74900944145 /* Mask.m */,
+				8A1A666B1AA8A74900944145 /* MaskedTextField.h */,
+				8A1A666C1AA8A74900944145 /* MaskedTextField.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A1A66601AA8A74900944145 /* MaskComponent */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A66611AA8A74900944145 /* EOLComponent.h */,
+				8A1A66621AA8A74900944145 /* EOLComponent.m */,
+				8A1A66631AA8A74900944145 /* FreeCharacterComponent.h */,
+				8A1A66641AA8A74900944145 /* FreeCharacterComponent.m */,
+				8A1A66651AA8A74900944145 /* MaskComponent.h */,
+				8A1A66661AA8A74900944145 /* MaskComponent.m */,
+				8A1A66671AA8A74900944145 /* MultiCharacterValueableComponent.h */,
+				8A1A66681AA8A74900944145 /* MultiCharacterValueableComponent.m */,
+				8A1A66691AA8A74900944145 /* ValueableCharacterComponent.h */,
+				8A1A666A1AA8A74900944145 /* ValueableCharacterComponent.m */,
+			);
+			path = MaskComponent;
+			sourceTree = "<group>";
+		};
+		8A1A666D1AA8A74900944145 /* MaskUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A666E1AA8A74900944145 /* FormatParser.h */,
+				8A1A666F1AA8A74900944145 /* FormatParser.m */,
+				8A47D7AA1AAB41DC005A63A9 /* FormatSanitizer.h */,
+				8A47D7AB1AAB41DC005A63A9 /* FormatSanitizer.m */,
+				8A1A66701AA8A74900944145 /* MaskCleaner.h */,
+				8A1A66711AA8A74900944145 /* MaskCleaner.m */,
+				8A1A66721AA8A74900944145 /* MaskFormatter.h */,
+				8A1A66731AA8A74900944145 /* MaskFormatter.m */,
+				8A1A66741AA8A74900944145 /* MaskUtil.h */,
+				8A1A66751AA8A74900944145 /* MaskUtil.m */,
+				8A1A66761AA8A74900944145 /* MaskValueExtractor.h */,
+				8A1A66771AA8A74900944145 /* MaskValueExtractor.m */,
+				8A1A66781AA8A74900944145 /* PlaceholderCreator.h */,
+				8A1A66791AA8A74900944145 /* PlaceholderCreator.m */,
+				8A9A7D2C1AC145DC00F63B1A /* SimplePlaceholderCreator.h */,
+				8A9A7D2D1AC145DC00F63B1A /* SimplePlaceholderCreator.m */,
+			);
+			path = MaskUtil;
+			sourceTree = "<group>";
+		};
+		8A1A667A1AA8A74900944145 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A667B1AA8A74900944145 /* Transition.h */,
+				8A1A667C1AA8A74900944145 /* Transition.m */,
+				8A1A667D1AA8A74900944145 /* TransitionGraph.h */,
+				8A1A667E1AA8A74900944145 /* TransitionGraph.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		8A1A667F1AA8A74900944145 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8A1A66801AA8A74900944145 /* NSArrayCycleIterator.h */,
+				8A1A66811AA8A74900944145 /* NSArrayCycleIterator.m */,
+				8A1A66821AA8A74900944145 /* NSString+Character.h */,
+				8A1A66831AA8A74900944145 /* NSString+Character.m */,
+				8A1A66841AA8A74900944145 /* NSStringIterator.h */,
+				8A1A66851AA8A74900944145 /* NSStringIterator.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8A47D7AD1AAB45E4005A63A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A47D7AE1AAB4600005A63A9 /* InputBlock.h */,
+				8A47D7AF1AAB4600005A63A9 /* InputBlock.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A5A39851AAB940C004EBAF4 /* InputMaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A39901AAB9428004EBAF4 /* Classes */,
+				8A5A39921AAB9428004EBAF4 /* Supporting Files */,
+			);
+			path = InputMaskTests;
+			sourceTree = "<group>";
+		};
+		8A5A39901AAB9428004EBAF4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A39BB1AAB9A8B004EBAF4 /* Mask */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A5A39921AAB9428004EBAF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A39931AAB9428004EBAF4 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A5A39BB1AAB9A8B004EBAF4 /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A39BE1AAB9B61004EBAF4 /* MaskTestCase.h */,
+				8A5A39BF1AAB9B61004EBAF4 /* MaskTestCase.m */,
+				8A5A39BC1AAB9A9D004EBAF4 /* PhoneNumberTests.m */,
+				8AF030B91AABAA6D00A4D707 /* VariablePhoneNumberTests.m */,
+				8AF030BB1AABB17A00A4D707 /* MonthYearDateTests.m */,
+				8AD8A6BD1AAF4CED00A55771 /* DayMonthYearDateTests.m */,
+				8A46DD181AAF17E300B6F909 /* ExtraChargeTests.m */,
+			);
+			path = Mask;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A1A65DE1AA8A60E00944145 /* InputMask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1A65F31AA8A60E00944145 /* Build configuration list for PBXNativeTarget "InputMask" */;
+			buildPhases = (
+				8A1A65DB1AA8A60E00944145 /* Sources */,
+				8A1A65DC1AA8A60E00944145 /* Frameworks */,
+				8A1A65DD1AA8A60E00944145 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InputMask;
+			productName = InputMask;
+			productReference = 8A1A65DF1AA8A60E00944145 /* libInputMask.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8A5A39991AAB9468004EBAF4 /* InputMaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A5A39A31AAB9468004EBAF4 /* Build configuration list for PBXNativeTarget "InputMaskTests" */;
+			buildPhases = (
+				8A5A39961AAB9468004EBAF4 /* Sources */,
+				8A5A39971AAB9468004EBAF4 /* Frameworks */,
+				8A5A39981AAB9468004EBAF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A5A39A21AAB9468004EBAF4 /* PBXTargetDependency */,
+			);
+			name = InputMaskTests;
+			productName = InputMaskTestsBundle;
+			productReference = 8A5A399A1AAB9468004EBAF4 /* InputMaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A1A65D71AA8A60E00944145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "RedMadRobot LLC.";
+				TargetAttributes = {
+					8A1A65DE1AA8A60E00944145 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8A5A39991AAB9468004EBAF4 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A1A65DA1AA8A60E00944145 /* Build configuration list for PBXProject "InputMask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A1A65D61AA8A60E00944145;
+			productRefGroup = 8A1A65E01AA8A60E00944145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A1A65DE1AA8A60E00944145 /* InputMask */,
+				8A5A39991AAB9468004EBAF4 /* InputMaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A5A39981AAB9468004EBAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A1A65DB1AA8A60E00944145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A9A7D2E1AC145DC00F63B1A /* SimplePlaceholderCreator.m in Sources */,
+				8A1A66871AA8A74900944145 /* EOLComponent.m in Sources */,
+				8A47D7AC1AAB41DC005A63A9 /* FormatSanitizer.m in Sources */,
+				8A47D7B01AAB4600005A63A9 /* InputBlock.m in Sources */,
+				8A1A66951AA8A74900944145 /* NSArrayCycleIterator.m in Sources */,
+				8A1A66881AA8A74900944145 /* FreeCharacterComponent.m in Sources */,
+				8A1A66921AA8A74900944145 /* PlaceholderCreator.m in Sources */,
+				8A1A668E1AA8A74900944145 /* MaskCleaner.m in Sources */,
+				8A1A668C1AA8A74900944145 /* MaskedTextField.m in Sources */,
+				8A1A66911AA8A74900944145 /* MaskValueExtractor.m in Sources */,
+				8A1A668A1AA8A74900944145 /* MultiCharacterValueableComponent.m in Sources */,
+				8A1A66971AA8A74900944145 /* NSStringIterator.m in Sources */,
+				8A1A66861AA8A74900944145 /* Mask.m in Sources */,
+				8A1A66941AA8A74900944145 /* TransitionGraph.m in Sources */,
+				8A1A66901AA8A74900944145 /* MaskUtil.m in Sources */,
+				8A1A668F1AA8A74900944145 /* MaskFormatter.m in Sources */,
+				8A1A668D1AA8A74900944145 /* FormatParser.m in Sources */,
+				8A1A66931AA8A74900944145 /* Transition.m in Sources */,
+				8A1A66961AA8A74900944145 /* NSString+Character.m in Sources */,
+				8A1A668B1AA8A74900944145 /* ValueableCharacterComponent.m in Sources */,
+				8A1A66891AA8A74900944145 /* MaskComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5A39961AAB9468004EBAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5A39B31AAB9581004EBAF4 /* InputBlock.m in Sources */,
+				8A5A39B61AAB9589004EBAF4 /* NSArrayCycleIterator.m in Sources */,
+				8A5A39AE1AAB957E004EBAF4 /* MaskCleaner.m in Sources */,
+				8A5A39C01AAB9B61004EBAF4 /* MaskTestCase.m in Sources */,
+				8A5A39A71AAB9579004EBAF4 /* EOLComponent.m in Sources */,
+				8A5A39AF1AAB957E004EBAF4 /* MaskFormatter.m in Sources */,
+				8A5A39B91AAB9589004EBAF4 /* Mask.m in Sources */,
+				8A5A39AA1AAB9579004EBAF4 /* MultiCharacterValueableComponent.m in Sources */,
+				8A5A39B11AAB957E004EBAF4 /* MaskValueExtractor.m in Sources */,
+				8A5A39AC1AAB957E004EBAF4 /* FormatParser.m in Sources */,
+				8A5A39A91AAB9579004EBAF4 /* MaskComponent.m in Sources */,
+				8A5A39B81AAB9589004EBAF4 /* NSStringIterator.m in Sources */,
+				8A5A39B01AAB957E004EBAF4 /* MaskUtil.m in Sources */,
+				8A5A39B51AAB9589004EBAF4 /* TransitionGraph.m in Sources */,
+				8A5A39BD1AAB9A9D004EBAF4 /* PhoneNumberTests.m in Sources */,
+				8AF030BC1AABB17A00A4D707 /* MonthYearDateTests.m in Sources */,
+				8AF030BA1AABAA6D00A4D707 /* VariablePhoneNumberTests.m in Sources */,
+				8A5A39A81AAB9579004EBAF4 /* FreeCharacterComponent.m in Sources */,
+				8A5A39B21AAB957E004EBAF4 /* PlaceholderCreator.m in Sources */,
+				8A46DD191AAF17E300B6F909 /* ExtraChargeTests.m in Sources */,
+				8AD8A6BE1AAF4CED00A55771 /* DayMonthYearDateTests.m in Sources */,
+				8A5A39B41AAB9589004EBAF4 /* Transition.m in Sources */,
+				8A5A39B71AAB9589004EBAF4 /* NSString+Character.m in Sources */,
+				8A5A39AD1AAB957E004EBAF4 /* FormatSanitizer.m in Sources */,
+				8A5A39BA1AAB9589004EBAF4 /* MaskedTextField.m in Sources */,
+				8A5A39AB1AAB9579004EBAF4 /* ValueableCharacterComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A5A39A21AAB9468004EBAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A1A65DE1AA8A60E00944145 /* InputMask */;
+			targetProxy = 8A5A39A11AAB9468004EBAF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A1A65F11AA8A60E00944145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		8A1A65F21AA8A60E00944145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		8A1A65F41AA8A60E00944145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		8A1A65F51AA8A60E00944145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		8A5A39A41AAB9468004EBAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InputMaskTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A5A39A51AAB9468004EBAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InputMaskTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A1A65DA1AA8A60E00944145 /* Build configuration list for PBXProject "InputMask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1A65F11AA8A60E00944145 /* Debug */,
+				8A1A65F21AA8A60E00944145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1A65F31AA8A60E00944145 /* Build configuration list for PBXNativeTarget "InputMask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A1A65F41AA8A60E00944145 /* Debug */,
+				8A1A65F51AA8A60E00944145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A5A39A31AAB9468004EBAF4 /* Build configuration list for PBXNativeTarget "InputMaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A5A39A41AAB9468004EBAF4 /* Debug */,
+				8A5A39A51AAB9468004EBAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A1A65D71AA8A60E00944145 /* Project object */;
+}
